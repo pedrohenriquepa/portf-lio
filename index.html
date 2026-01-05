@@ -4,184 +4,365 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Pedro Alves | Desenvolvedor</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="icon" href="penguin.png">
-
+    <link rel="icon" href="code-solid-full.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <!-- Header -->
     <header class="header">
-        <a href="#" class="logo">Portfolio.</a>
+        <a href="#" class="logo">pedro<span>.alves</span></a>
         <nav class="navbar">
-            <a href="#" style="--i:1;" class="active">Home</a>
-            <a href="#about" style="--i:2;">About</a>
-            <a href="#skills" style="--i:3;">Skills</a>
-            <a href="#contact" style="--i:5;">Contact</a>
+            <a href="#home" class="active">Home</a>
+            <a href="#technologies">Tecnologias</a>
+            <a href="#experience">Experiência</a>
+            <a href="#education">Educação</a>
+            <a href="#contact">Contato</a>
         </nav>
-        <style>
-            body {
-                font-family: Arial, sans-serif;
-                margin: 0;
-                padding: 0;
-            }
-
-            form {
-                max-width: 500px;
-                margin: 50px auto;
-                padding: 20px;
-                background-color: #1f242d;
-                border-radius: 5px;
-                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            }
-
-            .input-box {
-                display: flex;
-                justify-content: space-between;
-                margin-bottom: 10px;
-            }
-
-            .input-field {
-                position: relative;
-                flex-grow: 1;
-                margin-right: 10px;
-            }
-
-            input[type="text"],
-            input[type="email"],
-            input[type="tel"],
-            textarea {
-                width: 100%;
-                padding: 10px;
-                border: 1px solid #ccc;
-                border-radius: 5px;
-                font-size: 14px;
-            }
-
-            .textarea-field {
-                margin-bottom: 10px;
-            }
-
-            .btn-box {
-                text-align: right;
-            }
-
-            .btn {
-                padding: 10px 20px;
-                background-color: #ade4ff;
-                color: #1f242d;
-                border: none;
-                border-radius: 5px;
-                font-size: 16px;
-                cursor: pointer;
-            }
-
-            .btn:hover {
-                background-color: #1f242d;
-            }
-        </style>
-
+        <div class="header-actions">
+            <button class="lang-toggle" id="langToggle" title="Switch to English">
+                <i class='bx bx-globe'></i>
+                <span>EN</span>
+            </button>
+            <a href="#contact" class="btn-primary" data-translate="header-cta">
+                <i class='bx bx-arrow-back bx-rotate-135'></i>
+                Entre em Contato
+            </a>
+        </div>
     </header>
-    <section class="home">
-        <div class="home-content">
-            <h3>I am</h3>
-            <h1>Pedro Alves</h1>
-            <h3>And I'm a <span class="multiple-text"></span></h3>
 
-            <div class="social-media">
-                <a href="https://github.com/pedrohenriquepa" styl="--i:8"><i class='bx bxl-github'></i></a>
-                <a href="https://www.instagram.com/pedro__alz/" style="--i:9"><i class='bx bxl-instagram-alt'></i></a>
-                <a href="https://www.linkedin.com/in/pedro-henrique-0b845a227/" style="--i:10"><i
-                        class='bx bxl-linkedin'></i></a>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span data-translate="hero-title-1">Desenvolvedor</span>
+                <span class="highlight" data-translate="hero-title-2">Full Stack</span>
+            </h1>
+            <p class="hero-description" data-translate="hero-description">
+                Desenvolvedor especializado em criar soluções digitais robustas e eficientes. 
+                Apaixonado por tecnologia, engenharia de software e resolução de problemas complexos.
+            </p>
+            <a href="#contact" class="btn-cta">
+                <i class='bx bx-arrow-back bx-rotate-135'></i>
+                <span data-translate="hero-cta">Vamos Conversar</span>
+            </a>
+        </div>
+        <div class="hero-visual">
+            <div class="sphere-container">
+                <div class="sphere"></div>
             </div>
-            <a href="#" class="btn">Hire me</a>
         </div>
-
-        <div class="home-img">
-            <img src="pingus.png" alt="">
-        </div>
-    </section>
-    <section class="home">
-        <div class="home-content" id="about">
-            <h3><span class="none-text"></span></h3><br><br>
-            <p> I have a technical degree in Internet Computing from IFNMG (Federal Institute of Northern Minas Gerais).
-                I have experience in website maintenance and development, working with PHP (Laravel), WordPress
-                (Elementor), and catalog site creation. Passionate about technology, I’m always looking to expand my
-                knowledge and grow both academically and professionally.
-
-                I have an intermediate knowledge of English, allowing me to understand and communicate fundamental
-                concepts. I have training in hardware, including assembly, maintenance, and troubleshooting.
-                Additionally, I use GitHub to share and manage software development projects.
-            </p>
-        </div>
-    </section>
-    <section class="home">
-        <div class="home-content" id="skills">
-            <h3><span class="skills-text"></span></h3><br><br>
-            <p> I have experience in development using Java, PHP, HTML and CSS languages,
-                in addition to knowledge in databases such as MySQL and SQLite. I also have skills in hardware,
-                Basic English and Intermediate Spanish, as well as knowledge in basic computing and application
-                development in Android Studio. In addition to the skills mentioned above, I would like to highlight my
-                ability to develop efficient and scalable solutions through an object-oriented approach. I have
-                experience working with multidisciplinary teams, which allows me to collaborate effectively on software
-                projects.
-                responsive design, ensuring that the apps and websites I develop are compatible with multiple devices
-                and offer a great user experience. In addition, I have advanced skills in database queries and
-                optimization, which allows me to create robust and efficient systems in storage and retrieval of
-                information. I am a dedicated professional, committed to deadlines and always looking for continuous
-                updating and improvement. I am excited about the possibility of contributing to challenging projects,
-                applying my technical skills and knowledge in application and web development. If there is any specific
-                information you would like to know about my experience or previous projects
-                feel free to ask. I look forward to working collaboratively and adding value to your team or project.
-
-            </p>
-        </div>
-        <div class="home-img">
-            <img src="pingudomal.png" alt="">
+        <div class="social-float">
+            <a href="https://github.com/pedrohenriquepa" target="_blank"><i class='bx bxl-github'></i></a>
+            <a href="https://www.instagram.com/pedro__alz/" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+            <a href="https://www.linkedin.com/in/alve-s/" target="_blank"><i class='bx bxl-linkedin'></i></a>
         </div>
     </section>
 
-    <!--ENVIA UM EMAIL PRA VC -->
+    <!-- Technologies Section -->
+    <section class="technologies" id="technologies">
+        <div class="section-header">
+            <span class="section-tag" data-translate="tech-tag">Stack</span>
+            <h2 class="section-title" data-translate="tech-title">Tecnologias que Domino</h2>
+        </div>
+        <div class="tech-grid">
+            <!-- Linguagens -->
+            <div class="tech-item">
+                <i class='bx bxl-php'></i>
+                <span>PHP</span>
+            </div>
+            <div class="tech-item">
+                <i class='bx bxl-java'></i>
+                <span>Java</span>
+            </div>
+            <div class="tech-item">
+                <i class='bx bxl-javascript'></i>
+                <span>JavaScript</span>
+            </div>
+            <div class="tech-item">
+                <i class='bx bxl-typescript'></i>
+                <span>TypeScript</span>
+            </div>
+            <div class="tech-item">
+                <i class='bx bxl-python'></i>
+                <span>Python</span>
+            </div>
+            <div class="tech-item">
+                <i class='bx bxl-html5'></i>
+                <span>HTML5</span>
+            </div>
+            <div class="tech-item">
+                <i class='bx bxl-css3'></i>
+                <span>CSS3</span>
+            </div>
+            <!-- Frameworks -->
+            <div class="tech-item">
+                <i class='bx bxs-terminal'></i>
+                <span>Laravel</span>
+            </div>
+            <div class="tech-item">
+                <i class='bx bxl-react'></i>
+                <span>React</span>
+            </div>
+            <div class="tech-item">
+                <i class='bx bxl-react'></i>
+                <span>Next.js</span>
+            </div>
+            <div class="tech-item">
+                <i class='bx bxl-bootstrap'></i>
+                <span>Bootstrap</span>
+            </div>
+            <!-- Banco de Dados -->
+            <div class="tech-item">
+                <i class='bx bxs-data'></i>
+                <span>MySQL</span>
+            </div>
+            <div class="tech-item">
+                <i class='bx bxl-postgresql'></i>
+                <span>PostgreSQL</span>
+            </div>
+            <div class="tech-item">
+                <i class='bx bxl-firebase'></i>
+                <span>Firebase</span>
+            </div>
+            <div class="tech-item">
+                <i class='bx bxl-firebase'></i>
+                <span>Firestore</span>
+            </div>
+            <!-- Ferramentas -->
+            <div class="tech-item">
+                <i class='bx bxl-git'></i>
+                <span>Git</span>
+            </div>
+            <div class="tech-item">
+                <i class='bx bxl-github'></i>
+                <span>GitHub</span>
+            </div>
+            <div class="tech-item">
+                <i class='bx bxl-trello'></i>
+                <span>Trello</span>
+            </div>
+            <div class="tech-item">
+                <i class='bx bx-columns'></i>
+                <span>Kanban</span>
+            </div>
+        </div>
+    </section>
 
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+        <div class="section-header">
+            <span class="section-tag" data-translate="exp-tag">Projetos</span>
+            <h2 class="section-title" data-translate="exp-title">Experiência Profissional</h2>
+        </div>
+        <div class="experience-grid">
+            <div class="experience-card">
+                <div class="card-icon">
+                    <i class='bx bx-data'></i>
+                </div>
+                <h3 data-translate="exp-card1-title">Engenharia Reversa de BD</h3>
+                <p data-translate="exp-card1-desc">Análise e documentação de estruturas de bancos de dados legados, 
+                   mapeamento de relacionamentos e criação de diagramas ER para diversos sistemas.</p>
+                <div class="card-tags">
+                    <span>MySQL</span>
+                    <span>SQLite</span>
+                    <span>PostgreSQL</span>
+                    <span>Firebase</span>
+                </div>
+            </div>
+            <div class="experience-card">
+                <div class="card-icon">
+                    <i class='bx bx-code-block'></i>
+                </div>
+                <h3 data-translate="exp-card2-title">Desenvolvimento Web</h3>
+                <p data-translate="exp-card2-desc">Criação e manutenção de sites e sistemas web utilizando PHP, Laravel e WordPress, 
+                   com foco em performance, SEO e experiência do usuário.</p>
+                <div class="card-tags">
+                    <span>PHP</span>
+                    <span>Laravel</span>
+                    <span>React</span>
+                    <span>TypeScript</span>
+                    <span>WordPress</span>
+                    
+                </div>
+            </div>
+            <div class="experience-card">
+                <div class="card-icon">
+                    <i class='bx bx-mobile-alt'></i>
+                </div>
+                <h3 data-translate="exp-card3-title">Desenvolvimento Mobile</h3>
+                <p data-translate="exp-card3-desc">Experiência com desenvolvimento de aplicativos Android utilizando Android Studio 
+                   e Java, criando soluções mobile nativas e responsivas.</p>
+                <div class="card-tags">
+                    <span>Android</span>
+                    <span>Java</span>
+                    <span>Mobile</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education" id="education">
+        <div class="section-header">
+            <span class="section-tag" data-translate="edu-tag">Formação • Educação</span>
+            <h2 class="section-title" data-translate="edu-title">Minha Jornada<br>Acadêmica</h2>
+        </div>
+        <div class="education-timeline">
+            <div class="timeline-line"></div>
+            <div class="education-card">
+                <div class="card-top">
+                    <div class="edu-icon">
+                        <i class='bx bxs-graduation'></i>
+                    </div>
+                    <h3 data-translate="edu-card1-title">Bacharelado em Sistemas de Informação</h3>
+                    <p data-translate="edu-card1-desc">Formação superior com foco em desenvolvimento de software, banco de dados, engenharia de software e gestão de TI.</p>
+                </div>
+                <div class="card-number">01</div>
+                <span class="edu-institution">Unimontes</span>
+                <span class="edu-year" data-translate="edu-card1-year">Cursando</span>
+            </div>
+            <div class="education-card">
+                <div class="card-top">
+                    <div class="edu-icon">
+                        <i class='bx bxs-graduation'></i>
+                    </div>
+                    <h3 data-translate="edu-card2-title">Curso Técnico em Informática</h3>
+                    <p data-translate="edu-card2-desc">Formação técnica com ênfase em programação, redes de computadores e suporte técnico.</p>
+                </div>
+                <div class="card-number">02</div>
+                <span class="edu-institution">IFNMG</span>
+                <span class="edu-year">2022 - 2023</span>
+            </div>
+            <div class="education-card">
+                <div class="card-top">
+                    <div class="edu-icon">
+                        <i class='bx bxs-chip'></i>
+                    </div>
+                    <h3 data-translate="edu-card3-title">Montagem e Manutenção de Hardware</h3>
+                    <p data-translate="edu-card3-desc">Curso técnico com foco em montagem, configuração e manutenção de computadores e periféricos.</p>
+                </div>
+                <div class="card-number">03</div>
+                <span class="edu-institution">Virtual Montes</span>
+                <span class="edu-year">2018</span>
+            </div>
+            <div class="education-card">
+                <div class="card-top">
+                    <div class="edu-icon">
+                        <i class='bx bxs-certification'></i>
+                    </div>
+                    <h3 data-translate="edu-card4-title">Especialização em Desenvolvimento</h3>
+                    <p data-translate="edu-card4-desc">Cursos especializados em tecnologias modernas de desenvolvimento web e mobile.</p>
+                </div>
+                <div class="card-number">04</div>
+                <span class="edu-institution">Udemy</span>
+                <span class="edu-year" data-translate="edu-card4-year">Contínuo</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
     <section class="contact" id="contact">
-        <form action="https://api.staticforms.xyz/submit" method="POST">
-            <input type="hidden" name="accessKey" value="bd316304-edcd-4040-aa48-646b6b1e1d82">
-            <div class="input-box">
-                <div class="input-field">
-                    <input type="text" name="name" placeholder="Nome Completo" required>
-                    <span class="focus"></span>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="section-header">
+                    <span class="section-tag" data-translate="contact-tag">Contato</span>
+                    <h2 class="section-title" data-translate="contact-title">Vamos trabalhar juntos!</h2>
                 </div>
-                <div class="input-field">
-                    <input type="email" name="email" placeholder="Endereço de e-mail" required>
-                    <span class="focus"></span>
+                <p class="contact-description" data-translate="contact-desc">
+                    Estou sempre aberto a novas oportunidades e projetos interessantes. 
+                    Entre em contato e vamos conversar!
+                </p>
+                <div class="contact-details">
+                    
+                    <div class="contact-item">
+                        <i class='bx bx-envelope'></i>
+                        <span>pedro.p.alves7@email.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class='bx bx-map'></i>
+                        <span>Minas Gerais, Brasil</span>
+                    </div>
+                </div>
+                <div class="contact-social">
+                    <a href="https://github.com/pedrohenriquepa" target="_blank"><i class='bx bxl-github'></i></a>
+                    <a href="https://www.instagram.com/pedro__alz/" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+                    <a href="https://www.linkedin.com/in/pedro-henrique-0b845a227/" target="_blank"><i class='bx bxl-linkedin'></i></a>
                 </div>
             </div>
-
-            <div class="input-box">
-                <div class="input-field">
-                    <input type="tel" name="phone" placeholder="Número de telefone" required>
-                    <span class="focus"></span>
-                </div>
-                <div class="input-field">
-                    <input type="text" name="subject" placeholder="Assunto do e-mail" required>
-                    <span class="focus"></span>
-                </div>
+            <div class="contact-form-container">
+                <form id="contactForm" action="https://api.staticforms.xyz/submit" method="POST">
+                    <input type="hidden" name="accessKey" value="bd316304-edcd-4040-aa48-646b6b1e1d82">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name" data-translate="form-name">Nome Completo</label>
+                            <input type="text" id="name" name="name" data-translate-placeholder="form-name-ph" placeholder="Seu nome" required minlength="3" maxlength="100">
+                            <span class="error-message" id="nameError"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" data-translate="form-email">E-mail</label>
+                            <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                            <span class="error-message" id="emailError"></span>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone" data-translate="form-phone">Telefone</label>
+                            <input type="tel" id="phone" name="phone" data-translate-placeholder="form-phone-ph" placeholder="(00) 00000-0000" required maxlength="15">
+                            <span class="error-message" id="phoneError"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject" data-translate="form-subject">Assunto</label>
+                            <input type="text" id="subject" name="subject" data-translate-placeholder="form-subject-ph" placeholder="Assunto do e-mail" required minlength="5" maxlength="150">
+                            <span class="error-message" id="subjectError"></span>
+                        </div>
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="message" data-translate="form-message">Mensagem <span class="char-count" id="charCount">0/500</span></label>
+                        <textarea id="message" name="message" rows="5" data-translate-placeholder="form-message-ph" placeholder="Escreva sua mensagem..." required minlength="20" maxlength="500"></textarea>
+                        <span class="error-message" id="messageError"></span>
+                    </div>
+                    <input type="hidden" name="redirectTo" value="https://github.com/pedrohenriquepa">
+                    <button type="submit" class="btn-submit" id="submitBtn">
+                        <span data-translate="form-submit">Enviar Mensagem</span>
+                        <i class='bx bx-send'></i>
+                    </button>
+                </form>
             </div>
-
-            <div class="textarea-field">
-                <textarea name="message" cols="30" rows="10" placeholder="Sua mensagem 🐧" required></textarea>
-                <span class="focus"></span>
-            </div>
-
-            <div class="btn-box btns">
-                <input type="hidden" name="redirectTo" value="https://github.com/pedrohenriquepa">
-                <button type="submit" class="btn">Enviar</button>
-            </div>
-        </form>
-
+        </div>
     </section>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <a href="#" class="logo">pedro<span>.alves</span></a>
+                <p data-translate="footer-desc">Desenvolvedor Backend apaixonado por criar soluções digitais inovadoras e eficientes.</p>
+            </div>
+            <div class="footer-links">
+                <h4 data-translate="footer-links">Links Rápidos</h4>
+                <a href="#home">Home</a>
+                <a href="#technologies">Tecnologias</a>
+                <a href="#experience">Experiência</a>
+                <a href="#education">Educação</a>
+                <a href="#contact">Contato</a>
+            </div>
+            <div class="footer-contact">
+                <h4 data-translate="footer-contact">Contato</h4>
+                <p><i class='bx bx-envelope'></i> pedro.p.alves7@email.com</p>
+                <p><i class='bx bx-map'></i> Minas Gerais, Brasil</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p data-translate="footer-rights">&copy; 2026 Pedro Alves. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 
